@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Brand UI - HCI Enhanced</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Navigation -->
+  <header class="flex flex-wrap justify-between items-center p-6 border-b bg-white shadow-md">
+    <div class="text-xl font-bold">Sign up for free and get exclusive updates 
+      and VIP offers
+      
+    </div>
+    <nav class="space-x-4">
+      <a href="#" class="hover:text-pink-600">HOME</a>
+      <a href="#" class="hover:text-pink-600">HELP</a>
+      <a href="#" class="hover:text-pink-600">ABOUT US</a>
+      <a href="#login" class="hover:text-pink-600">SIGN IN</a>
+      <a href="#" class="hover:text-pink-600">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-10 bg-pink-50">
+    <img src="carry your confidence with every bag.png" alt="Fashion Banner" class="mx-auto w-full max-w-2xl h-60 object-cover rounded mb-10">
+    <h1 class="text-4xl font-bold mb-6">Stylish Bags for Every Occasion
+    </h1>
+    <div class="flex justify-center space-x-6 mt-6">
+      <div class="flex flex-col items-center">
+        <img src="Vermello.png" alt="Vermello" class="w-32 h-32 rounded-full object-cover shadow mb-2">
+        <span class="text-sm">Vermello</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="nomadaur.png" alt="Nomadaura" class="w-32 h-32 rounded-full object-cover shadow mb-2">
+        <span class="text-sm">Nomadaura</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="luxehaven.png" alt="LuxeHaven" class="w-32 h-32 rounded-full object-cover shadow mb-2">
+        <span class="text-sm">LuxeHaven</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Account and Conversation Section -->
+<section class="max-w-7xl mx-auto px-4 mt-10 flex flex-col lg:flex-row justify-between gap-6">
+  <!-- Sign Up Form -->
+  <div class="flex-1 p-6 border rounded shadow bg-white order-1">
+    <img src="Sign up.png" alt="Create Account" class="w-full h-48 object-cover rounded mb-4">
+    <h2 class="text-2xl font-semibold mb-4">Create your Account</h2>
+    <form onsubmit="event.preventDefault(); alert('Account Created Successfully!');" class="space-y-4">
+      <input type="text" placeholder="Username" class="w-full border p-2 rounded" required>
+      <input type="password" placeholder="Password" class="w-full border p-2 rounded" required>
+      <input type="password" placeholder="Confirm Password" class="w-full border p-2 rounded" required>
+      <button class="w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">SIGN UP</button>
+    </form>
+    <p class="text-center text-sm mt-4">or</p>
+    <button class="w-full border py-2 mt-2 rounded hover:bg-gray-100">Sign in with Google</button>
+    <p class="text-center text-sm mt-4">Already have an account? <a href="#login" class="text-pink-600">Log in</a></p>
+  </div>
+
+  <!-- Join the Conversation -->
+  <div class="flex-1 p-6 border rounded shadow bg-white order-3">
+    <h2 class="text-xl font-bold mb-4">Join the Conversation</h2>
+    <p class="mb-4">Share your thoughts about our collections:</p>
+    <form onsubmit="event.preventDefault(); const msg=document.getElementById('user-comment').value; if(msg) alert('Posted: ' + msg);">
+      <textarea id="user-comment" class="w-full border p-3 rounded" placeholder="What's on your mind?" required></textarea>
+      <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">Post</button>
+    </form>
+  </div>
+
+  <!-- Log In Form -->
+  <div class="flex-1 p-6 border rounded shadow bg-white order-2">
+    <img src="welcome back.png" alt="Welcome Back" class="w-full h-48 object-cover rounded mb-4">
+    <h2 class="text-2xl font-semibold mb-4">Welcome Back</h2>
+    <form onsubmit="event.preventDefault(); alert('Logged In Successfully!');" class="space-y-4">
+      <input type="text" placeholder="Username" class="w-full border p-2 rounded" required>
+      <input type="password" placeholder="Password" class="w-full border p-2 rounded" required>
+      <button class="w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">LOG IN</button>
+    </form>
+    <p class="text-right text-sm mt-2"><a href="#" class="text-pink-600">Forget Password?</a></p>
+    <p class="text-center text-sm mt-4">Don’t have an account? <a href="#" class="text-pink-600">Sign Up</a></p>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer class="mt-20 text-center text-sm py-6 text-gray-500">
+    &copy; 2025 Carry your confidence with every bag you choose
+    . All rights reserved.
+  </footer>
+</body>
+</html>
